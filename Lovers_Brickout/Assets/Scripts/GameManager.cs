@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -58,6 +59,14 @@ public class GameManager : MonoBehaviour
     public void LoadLevel(int level){
         this.level = level;
 
+        if(level > 15){
+            SceneManager.LoadScene("Menus");
+        }else{
+            SceneManager.LoadScene("Cutscene" + level);
+        }
+    }
+
+    public void LoadGameLevel(int level){
         SceneManager.LoadScene("Level" + level);
     }
 

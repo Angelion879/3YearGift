@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - MainMenu
     - MissZone
     - Paddle
+    - Video
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -40,7 +41,51 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
   sceneClasses:
+    Assets/Scenes/Cutscene1.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 2452}
+    - Class: 114
+      Script: {instanceID: 2702}
+    - Class: 114
+      Script: {instanceID: 2874}
+    - Class: 114
+      Script: {instanceID: 3106}
+    - Class: 114
+      Script: {instanceID: 3360}
+    - Class: 114
+      Script: {instanceID: 30608}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
+      Script: {instanceID: 0}
     Assets/Scenes/GlobalScene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -1343,10 +1388,17 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: cc560a463228beaed93030640a0d386f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Video
   platform: 19
   scenePathNames:
   - Assets/Scenes/GlobalScene.unity
   - Assets/Scenes/Menus.unity
+  - Assets/Scenes/Cutscene1.unity
   - Assets/Scenes/Level1.unity
   - Assets/Scenes/Level2.unity
   - Assets/Scenes/Level3.unity
@@ -1362,4 +1414,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level13.unity
   - Assets/Scenes/Level14.unity
   - Assets/Scenes/Level15.unity
-  playerPath: C:/Users/User/Desktop/GITBASHHERE/Lovers_Brickout/Builds/Lovers_Brickout.exe
+  playerPath: C:/Users/User/Documents/GitHub/3YearGift/Lovers_Brickout/build tester/Lovers_Brickout.exe
