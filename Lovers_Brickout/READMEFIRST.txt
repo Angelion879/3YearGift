@@ -2,6 +2,7 @@
 
 The app is inside the folder with the version:
 23.09.22 == PreAlpha;
+04.10.22 == build tester;
 
 To move the paddle use "A" & "D" or Left and Right Arrow Keys;
 Space Bar pauses the game (This info is in the settings menu as well);
