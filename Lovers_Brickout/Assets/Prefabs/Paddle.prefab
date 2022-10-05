@@ -146,3 +146,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   maxBounceAngle: 75
+  sound_effect: {fileID: 8300000, guid: 73a12b3a2f5ad9a4b981a233efa09405, type: 3}

@@ -6,6 +6,8 @@ public class Paddle : MonoBehaviour
     public Vector2 direction {get; private set;}
     public float speed = 30f;
     public float maxBounceAngle = 60f;
+    [SerializeField] private AudioSource sfxAudio;
+    [SerializeField] private AudioClip sound_effect;
 
     private void Awake() {
         this.rigidbody = GetComponent<Rigidbody2D>();
@@ -36,6 +38,7 @@ public class Paddle : MonoBehaviour
         Ball ball = collision.gameObject.GetComponent<Ball>();
 
         if (ball != null){
+            FindObjectOfType<AudioPlayer>().TocarSFX(sound_effect);
             Vector3 paddlePosition = this.transform.position;
             Vector2 contactPoint = collision.GetContact(0).point;
 

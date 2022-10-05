@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject PauseMenu;
     [SerializeField] private GameObject Menudo;
+    [SerializeField] private AudioSource sfxAudio;
+    [SerializeField] private AudioClip sound_effect;
 
     private void Awake() {
         DontDestroyOnLoad(this.gameObject);
@@ -71,6 +73,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void Hit(Brick brick){
+        FindObjectOfType<AudioPlayer>().TocarSFX(sound_effect);
         if(Cleared()){
             LoadLevel(this.level + 1);
         }
