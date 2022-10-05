@@ -738,7 +738,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press ESC to quit to main menu
+  m_text: Press M to quit to main menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 17c9698641fc09c44972762e063c6839, type: 2}
   m_sharedMaterial: {fileID: -5539212775594880314, guid: 17c9698641fc09c44972762e063c6839, type: 2}
@@ -872,7 +872,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press SPACE to keep playing
+  m_text: Press ESC to keep playing
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 17c9698641fc09c44972762e063c6839, type: 2}
   m_sharedMaterial: {fileID: -5539212775594880314, guid: 17c9698641fc09c44972762e063c6839, type: 2}

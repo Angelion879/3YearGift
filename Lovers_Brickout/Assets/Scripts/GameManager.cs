@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     }
 
     private void Update() {
-        if(Input.GetKey(KeyCode.Space)){
+        if(Input.GetKey(KeyCode.Escape)){
             if((Time.timeScale != 0)&(Time.time > this.lastPaused)){
                 this.lastPaused = (Time.unscaledTime) + 1;
                 PauseButton();
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
                 this.lastPaused = (Time.unscaledTime ) + 1;
                 ResumeButton();
             }
-        } else if (Input.GetKey(KeyCode.Escape)){
+        } else if (Input.GetKey(KeyCode.M)){
             ResumeButton();
             SceneManager.LoadScene("Menus");
         }
@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
         this.level = level;
 
         if(level > 15){
-            SceneManager.LoadScene("Menus");
+            SceneManager.LoadScene("credits");
         }else{
             SceneManager.LoadScene("Cutscene" + level);
         }
