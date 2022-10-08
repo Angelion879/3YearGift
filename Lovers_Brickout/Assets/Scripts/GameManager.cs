@@ -32,15 +32,18 @@ public class GameManager : MonoBehaviour
     private void Update() {
         if(Input.GetKey(KeyCode.Escape)){
             if((Time.timeScale != 0)&(Time.time > this.lastPaused)){
-                this.lastPaused = (Time.unscaledTime) + 1;
+                this.lastPaused = (Time.unscaledTime) + 0.5f;
                 PauseButton();
             }if((Time.timeScale == 0)&(Time.unscaledTime > this.lastPaused)){
-                this.lastPaused = (Time.unscaledTime ) + 1;
+                this.lastPaused = (Time.time ) + 0.5f;
                 ResumeButton();
             }
         } else if (Input.GetKey(KeyCode.M)){
             ResumeButton();
             SceneManager.LoadScene("Menus");
+        } else if (Input.GetKey(KeyCode.P)){
+            ResumeButton();
+            ForceReset();
         }
     }
 
@@ -96,6 +99,11 @@ public class GameManager : MonoBehaviour
 
     public void Miss(){
         this.ball.ResetBall();
+        this.paddle.ResetPaddle();
+    }
+
+    private void ForceReset(){
+        this.ball.BugReset();
         this.paddle.ResetPaddle();
     }
 }

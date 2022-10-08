@@ -15,8 +15,11 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -2289,4 +2292,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level14.unity
   - Assets/Scenes/Level15.unity
   - Assets/Scenes/credits.unity
-  playerPath: C:/Users/User/Documents/GitHub/3YearGift/Lovers_Brickout/Alpha/Lovers_Brickout.exe
+  playerPath: C:/Users/User/Desktop/GITBASHHERE/beta/Lovers_Brickout.exe
